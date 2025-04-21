@@ -2,9 +2,23 @@
 <html>
 	<head>
 		<meta charset="utf-8" content="text/html" />
-		<title>Kelly's Button</title>
+		<title>Kelly's Widgets</title>
 	</head>
 	<body>
+		<label for="scroll-height">Scrollbar Height:</label>
+		<input type="number" id="scroll-height" value="200" style="margin-right: 10px" />
+		<p id="thumb-position">Thumb Position: 0</p>
+
+		<div style="margin-top: 20px">
+			<label for="progress-width">Progress Bar Width:</label>
+			<input type="number" id="progress-width" value="200" min="50" max="600" step="10" />
+		</div>
+
+		<div style="margin-top: 10px">
+			<label for="increment-value">Increment Value:</label>
+			<input type="number" id="increment-value" value="10" min="1" max="100" />
+			<button id="increment-btn">Increment</button>
+		</div>
 		<script src="bundle.js"></script>
 	</body>
 </html>
